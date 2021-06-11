@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Forms.css">
+    <title>Forms
+    </title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>اطلاعات کاربری</legend>
+        <label>نام کاربری</label><input class="box" type="text" name="user"/><br/>
+        <label>رمز</label><input class="box" type="password" name="pass1"/><br/>
+        <label>تکرار رمز</label><input class="box" type="password" name="pass2"/><br/>
+    </fieldset>
+    <fieldset>
+        <legend>اطلاعات شخصی</legend>
+            <label>نام و نام خانوادگی</label><input type="text" name="fullname"/><br/>
+            <label>وضعیت تاهل</label><input type="radio" name="mariage" value="1"/><label class="radio">مجرد</label>
+            <input type="radio" name="mariage" value="2"/><label class="radio">متاهل</label><br/>
+            <label>تحصیلات</label>
+            <select class="box" name="education">
+                <option value="1">زیر دیپلم</option>
+                <option value="2">دیپلم</option>
+                <option value="3" selected>فوق دیپلم</option>
+                <option value="4">لیسانس</option>
+            </select><br/>
+        <label>تخصص ها</label>
+        <input type="checkbox" value="UI/UX" name="UI/UX"/><label class="check">UI/UX</label>
+        <input type="checkbox" value="C++" name="C++"/><label class="check">C++</label>
+        <input type="checkbox" value="Python" name="Python"/><label class="check">Python</label><br/>
+        <label>توضیح بیشتر</label>
+        <textarea class="box" name="discription"></textarea>
+    </fieldset>
+    <input class="button" type="submit" value="ارسال" >
+    <input class="button" type="reset" value="نوسازی">
+</form>
+</body>
+</html>
